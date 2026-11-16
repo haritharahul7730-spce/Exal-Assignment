@@ -63,3 +63,17 @@ diabetes status,heart issues,concer history ,number of surgeries are includ,hosp
 8. **Charges Currency**:
    - Format cells as Currency -> `$`
    - `=TEXT(A2,"$#,##0.00")`
+Data Exploration,Analysis &visulization
+
+Created a new sheet 'healthcare' and used vlookup to merge data .assuming 3 sheet are  customer,medical,health
+formula using for merging
+=vlookup(A2,'medical sheet' A:J,Column number,false)
+final column retained(as per requirement),customer id, first name,BMI,HBA1C,Heart issues,Any transplants,cancer history, numer of
+major surgeries,smoker,weight status,diabetes status,date of birth,charge ,hosptal tier,city tire,state id,age
+
+Analysis using pie/Donut chart
+pivot setup: row=cancer history,columns=smoker,values=count of custmer id
+Analysis using Bar chart
+row=weight status, column=diabetes,values=averges of charge
+Analysis using line/scatter plot
+correlation between age and BMI And HBA1C
